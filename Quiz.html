@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {text-align: center;
+        padding: 5px;
+        
+        }
+        
+    </style>
+</head>
+<body>
+<h1 id="questionSpace"></h1>
+<input id="userInput">  
+<button onclick="submit()">Submit</button> <br>
+<button onclick="next()">next</button> <br>
+<h1 id="message">  </h1>
+    <script>
+//Variables to store specific elements from the HTML, defines the section of code so we can identify it larter. 
+
+//a aray that holds all of the quiz questions
+var Questiondata = [ "What is the name of Belly's best friend ", "What are the names of the two brothers?","How old is Steven? ",
+ "Where is the beach house? ","Who is Nicole?", "What is the cause of Susana's death? ","True or false Conrad and Jeremiah live in cousins.",
+ "True or false, Jeremiah dates Belly before Conrad does.","What is Susana's maiden name? ", "What was the shape of the necklace Conrad gives to the belly?",
+ ""
+   
+]
+var answers = [
+    "Taylor", "Conrad and Jeremiah", "18","Cousins","Conrads girl friend", "Cancer", "false","True", "Beck",
+    "Infinity loop"
+]
+var counter = 0
+    
+
+function submit () {
+(Questiondata[counter]);
+(answers[counter]);
+counter ++
+}
+ 
+    </script>
+</body>
+</html>
